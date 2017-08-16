@@ -158,14 +158,18 @@ button.btn {
     margin-left: 5px;
     line-height: 1; }
 
-.stv-switch {
+.switch {
   clear: both; }
+  .switch.switch--right {
+    position: absolute;
+    right: -20px;
+    top: -2px; }
 
-input.stv-checkbox-switch {
+input.switch__checkbox {
   position: absolute;
   left: -99999px;
   top: -99999px; }
-  input.stv-checkbox-switch + label {
+  input.switch__checkbox + label {
     position: relative;
     float: left;
     line-height: 1em;
@@ -173,29 +177,29 @@ input.stv-checkbox-switch {
     padding-left: 3.5em;
     margin: 0.2em 0;
     cursor: pointer; }
-    input.stv-checkbox-switch + label::before, input.stv-checkbox-switch + label::after {
+    input.switch__checkbox + label::before, input.switch__checkbox + label::after {
       position: absolute;
       left: 0;
       content: '';
       line-height: 1em;
       -webkit-transition: all 0.1s cubic-bezier(0.72, 0.21, 0.95, 0.64);
       transition: all 0.1s cubic-bezier(0.72, 0.21, 0.95, 0.64); }
-    input.stv-checkbox-switch + label::before {
+    input.switch__checkbox + label::before {
       width: 2em;
       top: 0;
       bottom: 0;
       background-color: transparent;
       border: 1px solid #777;
       border-radius: 1em; }
-    input.stv-checkbox-switch + label::after {
+    input.switch__checkbox + label::after {
       width: 0.75em;
       top: 0.125em;
       bottom: 0.125em;
       margin-left: 0.1em;
       border-radius: 50%;
       background-color: #777; }
-  input.stv-checkbox-switch:checked + label::before {
+  input.switch__checkbox:checked + label::before {
     background: #7fd322; }
-  input.stv-checkbox-switch:checked + label::after {
+  input.switch__checkbox:checked + label::after {
     background-color: #fff;
     margin-left: 1.25em; }

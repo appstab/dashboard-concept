@@ -221,11 +221,17 @@ button.btn {
     }
 }
 
-.stv-switch {
-	clear: both;
+.switch {
+    clear: both;
+
+    &.switch--right {
+        position: absolute;
+        right: -20px;
+        top: -2px;
+    }
 }
 
-input.stv-checkbox-switch {
+input.switch__checkbox {
 	position: absolute;
 	left:-99999px;
 	top: -99999px;
