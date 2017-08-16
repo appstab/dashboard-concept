@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span {
+            box-sizing: border-box;
+            border: 1px solid #000;
+            display: inline-block;
+            height: 20px;
+            margin: 1px;
+            width: 35px;
+        }
+
+        span.lived {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <section id="content">
+
+    </section>
+</body>
+<script>
+
+let e = document.querySelector("#content");
+let weeks = "";
+let livedWeeks = 31*52;
+
+for(i=0; i < 52*90; i++) {
+    if(i <= livedWeeks) {
+        weeks += "<span class='lived'></span>";
+    }else {
+        weeks += "<span>"+i+"</span>";
+    }
+}
+
+e.innerHTML = weeks;
+
+</script>
+</html>

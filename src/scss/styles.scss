@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "Nimbus";
+    src: url("../fonts/Nimbus_Sans_Becker_TBlaCon.scss");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+    h1{
+        text-decoration: underline;
+    }
+}
+
+.circle {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+
+    &.outer-circle{
+        background: radial-gradient(#fff, #b8b8b8);
+        height: 280px;
+        position: relative;
+        width: 280px;
+        margin-top: 50px;
+
+        .product-logo {
+            border: 1px solid #fff;
+            color: #fff;
+            cursor: pointer;
+            height: 73px;
+            width: 73px;
+            position: absolute;
+            top: 40%;
+
+            &.ochre-logo {
+                background: #f29e10;
+                right: -5px;
+            }
+
+            &.green-logo {
+                background: #61b26c;
+                left: -5px;
+            }
+
+            span {
+                margin: 0 auto;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &.inner-circle{
+        background: #fff;
+        height: 160px;
+        width: 160px;
+    }
+
+    &.core-circle{
+        border: 1px dashed lightgray;
+        height: 100px;
+        justify-content: center;
+        width: 100px;
+    }
+}
+
+div.break-bar {
+    background: #fff;
+    height: 8px;
+    position: absolute;
+    width: 65px;
+
+    &.top-bar{
+        left: 39%;
+        top: 25px;
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Safari */
+        transform: rotate(90deg);
+    }
+
+    &.left-bar{
+        left: 10px;
+        top: 68%;
+        -ms-transform: rotate(-30deg); /* IE 9 */
+        -webkit-transform: rotate(-30deg); /* Safari */
+        transform: rotate(-30deg);
+    }
+
+    &.right-bar{
+        right: 10px;
+        top: 68%;
+        -ms-transform: rotate(30deg); /* IE 9 */
+        -webkit-transform: rotate(30deg); /* Safari */
+        transform: rotate(30deg);
+    }
+}
+
+button.btn {
+    background: #90d8e6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    outline: none;
+    padding: 2px 8px;
+    width: min-content;
+}
+
+.service-group {
+    border-bottom: 1px solid #333;
+    width: 200px;
+    position: absolute;
+
+    &.service-group__top-right {
+        top: -6%;
+        right: -49%;
+    }
+
+    &.service-group__upper-middle-right {
+        top: 33%;
+        right: -61%;
+        width: 160px;
+    }
+
+    &.service-group__lower-middle-right {
+        bottom: 36%;
+        right: -62%;
+        width: 160px;
+    }
+
+    &.service-group__bottom-right {
+        bottom: 1%;
+        right: -49%;
+    }
+
+    &.service-group__lower-middle-right,
+    &.service-group__bottom-right {
+        text-align: left;
+
+        &:before {
+            content: '';
+            border-bottom: 1px solid #333;
+            position: absolute;
+            width: 20px;
+            left: -16px;
+            transform: rotate(45deg);
+            bottom: 6px;
+        }
+    }
+
+    &.service-group__top-right,
+    &.service-group__upper-middle-right {
+        text-align: left;
+
+        &:before {
+            border-bottom: 1px solid #333;
+            content: '';
+            left: -17px;
+            position: absolute;
+            top: 25px;
+            transform: rotate(-45deg);
+            width: 20px;
+        }
+    }
+
+    &.service-group__lower-middle-right,
+    &.service-group__upper-middle-right {
+        span {
+            font-size: 10px;
+            margin-left: 5px;
+        }
+    }
+
+    &.service-group__top-right,
+    &.service-group__bottom-right {
+        span {
+            font-size: 10px;
+            margin-left: 25px;
+        }
+    }
+}
+
+
+.entity-counter {
+    position: absolute;
+    //color: #fff;
+
+    &.entity-counter--top {
+        top: 8%;
+        right: 23%;
+    }
+
+    &.entity-counter--bottom {
+        bottom: 6%;
+        left: 29%;
+    }
+
+    .entity-counter__title {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .entity-counter__count-tag {
+        float: left;
+        font-size: 10px;
+    }
+
+    .entity-counter__number {
+        font-size: 22px;
+        float: left;
+        margin-left: 5px;
+        line-height: 1;
+    }
+}
