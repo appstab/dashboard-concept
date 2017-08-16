@@ -18,7 +18,7 @@ body {
   display: flex;
   margin: 0 auto; }
   .circle.outer-circle {
-    background: radial-gradient(#fff, #b8b8b8);
+    background: radial-gradient(#fff, #515151);
     height: 280px;
     position: relative;
     width: 280px;
@@ -137,7 +137,8 @@ button.btn {
     margin-left: 25px; }
 
 .entity-counter {
-  position: absolute; }
+  position: absolute;
+  color: #fff; }
   .entity-counter.entity-counter--top {
     top: 8%;
     right: 23%; }
@@ -156,3 +157,45 @@ button.btn {
     float: left;
     margin-left: 5px;
     line-height: 1; }
+
+.stv-switch {
+  clear: both; }
+
+input.stv-checkbox-switch {
+  position: absolute;
+  left: -99999px;
+  top: -99999px; }
+  input.stv-checkbox-switch + label {
+    position: relative;
+    float: left;
+    line-height: 1em;
+    height: 1em;
+    padding-left: 3.5em;
+    margin: 0.2em 0;
+    cursor: pointer; }
+    input.stv-checkbox-switch + label::before, input.stv-checkbox-switch + label::after {
+      position: absolute;
+      left: 0;
+      content: '';
+      line-height: 1em;
+      -webkit-transition: all 0.1s cubic-bezier(0.72, 0.21, 0.95, 0.64);
+      transition: all 0.1s cubic-bezier(0.72, 0.21, 0.95, 0.64); }
+    input.stv-checkbox-switch + label::before {
+      width: 2em;
+      top: 0;
+      bottom: 0;
+      background-color: transparent;
+      border: 1px solid #777;
+      border-radius: 1em; }
+    input.stv-checkbox-switch + label::after {
+      width: 0.75em;
+      top: 0.125em;
+      bottom: 0.125em;
+      margin-left: 0.1em;
+      border-radius: 50%;
+      background-color: #777; }
+  input.stv-checkbox-switch:checked + label::before {
+    background: #7fd322; }
+  input.stv-checkbox-switch:checked + label::after {
+    background-color: #fff;
+    margin-left: 1.25em; }
