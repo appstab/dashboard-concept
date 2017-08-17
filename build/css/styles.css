@@ -203,24 +203,37 @@ button.btn {
     line-height: 1;
     width: 60%; }
 
-.arrow {
-  border-left: 5px solid #bebebe;
-  height: 40px;
-  position: absolute;
-  z-index: 1;
-  bottom: 95px;
-  left: 47%; }
-  .arrow .arrow__tip-up {
-    height: 10px;
-    width: 10px;
-    border-top: 3px solid #bebebe;
-    border-right: 3px solid #bebebe;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: -9px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 3px;
-    border-top-left-radius: 3px; }
+.arrows {
+  position: absolute; }
+  .arrows.arrows--down {
+    bottom: 95px;
+    left: 47%; }
+  .arrows.arrows--top {
+    top: 117px;
+    right: 145px;
+    transform: rotate(33deg); }
+  .arrows .arrow {
+    border-left: 5px solid #bebebe;
+    display: inline-block;
+    height: 38px;
+    margin: 0px 3px;
+    z-index: 1; }
+    .arrows .arrow .arrow__arrowhead {
+      border-bottom-right-radius: 3px;
+      border-right: 3px solid #bebebe;
+      border-top: 3px solid #bebebe;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 2px;
+      height: 10px;
+      position: absolute;
+      width: 10px; }
+      .arrows .arrow .arrow__arrowhead.arrow__arrowhead--up {
+        left: -1px;
+        transform: rotate(-45deg); }
+      .arrows .arrow .arrow__arrowhead.arrow__arrowhead--down {
+        right: -2px;
+        transform: rotate(135deg);
+        bottom: 5px; }
 
 .status-wrapper {
   background-color: #fff;
