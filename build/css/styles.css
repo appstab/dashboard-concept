@@ -208,7 +208,7 @@ button.btn {
   .arrows.arrows--down {
     bottom: 95px;
     left: 47%; }
-  .arrows.arrows--top {
+  .arrows.arrows--up {
     top: 117px;
     right: 145px;
     transform: rotate(33deg); }
@@ -231,7 +231,7 @@ button.btn {
         left: -1px;
         transform: rotate(-45deg); }
       .arrows .arrow .arrow__arrowhead.arrow__arrowhead--down {
-        right: -2px;
+        right: -1px;
         transform: rotate(135deg);
         bottom: 5px; }
 
@@ -257,14 +257,14 @@ button.btn {
     height: 45px;
     width: 45px; }
     .status-wrapper .status-wrapper__content.status-wrapper__content--success {
-      border: 1px solid lightgreen;
-      color: lightgreen; }
+      border: 1px solid #669900;
+      color: #669900; }
     .status-wrapper .status-wrapper__content.status-wrapper__content--warning {
-      border: 1px solid yellow;
-      color: yellow; }
+      border: 1px solid #ff9900;
+      color: #ff9900; }
     .status-wrapper .status-wrapper__content.status-wrapper__content--danger {
-      border: 1px solid lightcoral;
-      color: lightcoral; }
+      border: 1px solid #cc0000;
+      color: #cc0000; }
 
 .switch {
   clear: both; }
